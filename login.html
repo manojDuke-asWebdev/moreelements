@@ -11,29 +11,34 @@
  <!-- fonts -->
  <link rel="stylesheet" href="./fonts/fonts.css"/>
 
+ <!-- Validation -->
+ <script src="./src/lvalid.js"></script>
+
  <!-- bootstrap 5 -->
 </head>
 <body class="bg-dark roboto">
  <div class="container">
   <div class="row justify-content-center my-auto">
-   <form action="./login.html" class="form-group m-3 col-6 border border-light bg-light p-3">
+   <form action="./login.html" onsubmit="return (getSubmit());" class="form-group m-3 col-6 border border-light bg-light p-3">
     <span class="h1 text-capitalize">login</span>
 
     <!-- email field -->
     <figure class="my-2">
      <figcaption class="text-capitalize small fw-lighter">email</figcaption>
-     <input type="email" class="form-control">
+     <input type="text" class="form-control" name="email">
+     <span class="text-danger" id="email"></span>
     </figure>
 
     <!-- password field-->
     <figure class="my2">
      <figcaption class="text-capitalize small fw-lighter">password</figcaption>
-     <input type="password" class="form-control">
+     <input type="password" class="form-control" name="password">
+     <span class="text-danger" id="password"></span>
     </figure>
     
     <!-- remember  -->
     <figure class="align-item-center">
-     <input type="checkbox" class="form-checkbox">
+     <input type="checkbox" class="form-checkbox" name="remember">
      <span class="roboto">Remember me</span>
     </figure>
 

@@ -1,8 +1,10 @@
-<navbar>
-nav
- nav-toggler
-  expand menu icon
- collapse
-  navbar-nav (begin)
-   nav-item
-    nav-link
+|form validation|
+<getSubmit>
+ validation
+ | email
+ | | 1)field empty
+ | | 2)email validity 
+ | passwords
+ |  1)field empty
+ |   error show
+      clear errors
